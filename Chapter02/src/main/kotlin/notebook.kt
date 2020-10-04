@@ -1,4 +1,4 @@
-class Notebook() {
+class Notebook {
     /*
      * Represent a collection of notes that can be tagged, modified and searched.
      */

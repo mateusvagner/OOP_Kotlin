@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9cdd8130-9a85-4955-b0c3-9bf715185a37" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/menu.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/menu.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/note.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/note.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/notebook.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/notebook.kt" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1i76oYW78sJxL0a8gD1sWlOvtCh" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <module name="Chapter02.main" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="MainKt" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Kotlin.MainKt" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9cdd8130-9a85-4955-b0c3-9bf715185a37" name="Default Changelist" comment="" />
+      <created>1601246459238</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1601246459238</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Restored files">
+      <created>1601246575158</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1601246575158</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Restored files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Restored files" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="297" y="23" key="CommitChangelistDialog2" timestamp="1601246574941">
+      <screen x="0" y="23" width="1440" height="819" />
+    </state>
+    <state x="297" y="23" key="CommitChangelistDialog2/0.23.1440.819@0.23.1440.819" timestamp="1601246574941" />
+    <state x="100" y="123" width="1240" height="619" key="DiffContextDialog" timestamp="1601844182160">
+      <screen x="0" y="23" width="1440" height="819" />
+    </state>
+    <state x="100" y="123" width="1240" height="619" key="DiffContextDialog/0.23.1440.819@0.23.1440.819" timestamp="1601844182160" />
+    <state width="1398" height="444" key="GridCell.Tab.0.bottom" timestamp="1601406600096">
+      <screen x="0" y="23" width="1440" height="819" />
+    </state>
+    <state width="1398" height="444" key="GridCell.Tab.0.bottom/0.23.1440.819@0.23.1440.819" timestamp="1601406600096" />
+    <state width="1398" height="444" key="GridCell.Tab.0.center" timestamp="1601406600095">
+      <screen x="0" y="23" width="1440" height="819" />
+    </state>
+    <state width="1398" height="444" key="GridCell.Tab.0.center/0.23.1440.819@0.23.1440.819" timestamp="1601406600095" />
+    <state width="1398" height="444" key="GridCell.Tab.0.left" timestamp="1601406600094">
+      <screen x="0" y="23" width="1440" height="819" />
+    </state>
+    <state width="1398" height="444" key="GridCell.Tab.0.left/0.23.1440.819@0.23.1440.819" timestamp="1601406600094" />
+    <state width="1398" height="444" key="GridCell.Tab.0.right" timestamp="1601406600096">
+      <screen x="0" y="23" width="1440" height="819" />
+    </state>
+    <state width="1398" height="444" key="GridCell.Tab.0.right/0.23.1440.819@0.23.1440.819" timestamp="1601406600096" />
+    <state x="320" y="172" key="Vcs.Push.Dialog.v2" timestamp="1601246631422">
+      <screen x="0" y="23" width="1440" height="819" />
+    </state>
+    <state x="320" y="172" key="Vcs.Push.Dialog.v2/0.23.1440.819@0.23.1440.819" timestamp="1601246631422" />
+  </component>
+</project>

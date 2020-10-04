@@ -8,7 +8,6 @@ class Note(val id: Int,
  * Represent a note in the notebook. Match against a string in searches and store tags for each note.
  */
 
-
     fun match(filter: String): Boolean {
         return filter.contains(memo) || filter.contains(tags)
     }

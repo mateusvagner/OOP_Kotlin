@@ -5,7 +5,7 @@ class Menu {
      * Display a menu and respond to choices when run.
      */
 
-    var notebook = Notebook()
+    private var notebook = Notebook()
 
     fun run() {
         while (true) {
@@ -59,7 +59,7 @@ class Menu {
         println("Enter a tag: ")
         val tag =  readLine()!!
 
-        notebook.newNote(10, memo, tag) // todo como fazer o esquema do id?
+        notebook.newNote(10, memo, tag)
         println("Your note has been added.")
     }
 
