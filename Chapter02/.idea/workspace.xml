@@ -5,10 +5,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9cdd8130-9a85-4955-b0c3-9bf715185a37" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/menu.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/menu.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/note.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/note.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/notebook.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/notebook.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter03/.gradle/6.3/executionHistory/executionHistory.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter03/.gradle/6.3/fileChanges/last-build.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter03/.gradle/6.3/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter03/.gradle/6.3/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter03/.gradle/6.5/executionHistory/executionHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter03/.gradle/6.5/executionHistory/executionHistory.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter03/.gradle/6.5/fileChanges/last-build.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter03/.gradle/6.5/fileHashes/fileHashes.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter03/.gradle/6.5/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter03/.gradle/6.5/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter03/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter03/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter03/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter03/.gradle/vcs-1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter03/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter03/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter03/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter03/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter03/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter03/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter03/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter03/gradle.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter03/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter03/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter03/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter03/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter03/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +63,13 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.idea" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/.idea" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
@@ -75,18 +107,29 @@
       <option name="project" value="LOCAL" />
       <updated>1601246575158</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Code improvement">
+      <created>1601846932471</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1601846932471</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="Restored files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Restored files" />
+    <MESSAGE value="Code improvement" />
+    <option name="LAST_COMMIT_MESSAGE" value="Code improvement" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="297" y="23" key="CommitChangelistDialog2" timestamp="1601246574941">
+    <state x="297" y="23" key="CommitChangelistDialog2" timestamp="1601846932072">
       <screen x="0" y="23" width="1440" height="819" />
     </state>
-    <state x="297" y="23" key="CommitChangelistDialog2/0.23.1440.819@0.23.1440.819" timestamp="1601246574941" />
+    <state x="297" y="23" key="CommitChangelistDialog2/0.23.1440.819@0.23.1440.819" timestamp="1601846932072" />
     <state x="100" y="123" width="1240" height="619" key="DiffContextDialog" timestamp="1601844182160">
       <screen x="0" y="23" width="1440" height="819" />
     </state>
