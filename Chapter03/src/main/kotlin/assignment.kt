@@ -1,5 +1,7 @@
-interface Assignment {
+interface  Assignment {
 
-    fun lesson()
+    var student: String
+    fun lesson() {}
     fun check(code: String): Boolean
+
 }

@@ -1,8 +1,8 @@
-class AssignmentGrader(val student: String, assignmentClass: (String) -> Assignment) {
+class AssignmentGrader( val student: String, lessonConstructor: (String) -> Assignment) {
 
     var attempts = 0
     var correctAttempts = 0
-    var assignment = assignmentClass(student)
+    var assignment = lessonConstructor(student)
 
 
     fun check(code: String): Boolean {
