@@ -1,16 +1,24 @@
 fun main() {
 
 
-    fun introToKotlinConstructor(student: String): IntroToKotlin {
-        return IntroToKotlin(student)
-    }
+    val grader = Grader()
 
-    fun statisticsConstructor(student: String): Statistics {
-        return Statistics(student)
-    }
+    val introToKotlinId = grader.register { IntroToKotlin(it) }
+    val statisticsId = grader.register { Statistics(it) }
 
+    val mateus = "Mateus"
 
+    grader.startAssignment(mateus, introToKotlinId)
+    println("Mateus' lesson: ")
+    grader.getLesson(mateus)
+    println("Mateus' check: ${grader.checkAssignment(mateus, "a = 1 ; b = 'hello'")}")
+    println("Mateus' other check: ${grader.checkAssignment(mateus, "a = 1\nb = 'hello'")}")
+    grader.assignmentSummary(mateus)
 
-
-    println("Hello World")
+    grader.startAssignment(mateus, statisticsId)
+    println("Mateus' lesson: ")
+    grader.getLesson(mateus)
+    println("Mateus' check: ${grader.checkAssignment(mateus, "5,25")}")
+    println("Mateus' other check: ${grader.checkAssignment(mateus, "6,75")}")
+    grader.assignmentSummary(mateus)
 }

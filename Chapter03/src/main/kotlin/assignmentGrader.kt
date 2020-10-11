@@ -1,4 +1,4 @@
-class AssignmentGrader( val student: String, lessonConstructor: (String) -> Assignment) {
+class AssignmentGrader(private val student: String, lessonConstructor: (String) -> Assignment) {
 
     var attempts = 0
     var correctAttempts = 0
