@@ -2,8 +2,8 @@ import java.util.*
 
 class Grader {
 
-    var studentGrades = mutableMapOf<String, AssignmentGrader>()
-    var assignmentClasses = mutableMapOf<Int, (String) -> Assignment>()
+    private var studentGrades = mutableMapOf<String, AssignmentGrader>()
+    private var assignmentClasses = mutableMapOf<Int, (String) -> Assignment>()
 
     fun register(assignment: (String) -> Assignment): Int {
 
