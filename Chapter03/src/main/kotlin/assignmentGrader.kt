@@ -4,12 +4,11 @@ class AssignmentGrader(student: String, lessonConstructor: (String) -> Assignmen
     var correctAttempts = 0
     var assignment = lessonConstructor(student)
 
-
     fun check(code: String): Boolean {
         this.attempts += 1
         val isResultCorrect = assignment.check(code)
         if (isResultCorrect) {
-            correctAttempts =+ 1
+            correctAttempts += 1
         }
         return isResultCorrect
     }
@@ -17,7 +16,4 @@ class AssignmentGrader(student: String, lessonConstructor: (String) -> Assignmen
     fun lesson() {
         assignment.lesson()
     }
-
-
-
 }

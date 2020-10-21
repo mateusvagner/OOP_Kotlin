@@ -1,6 +1,5 @@
 fun main() {
 
-
     val grader = Grader()
 
     val introToKotlinId = grader.register { IntroToKotlin(it) }

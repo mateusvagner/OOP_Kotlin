@@ -31,7 +31,7 @@ class Grader {
         println("""
             
 -------- Summary --------
-        ${student}'s attempts att ${grader.assignment.javaClass.kotlin.qualifiedName}:
+        ${student}'s attempts at ${grader.assignment.javaClass.kotlin.qualifiedName}:
          - Attempts: ${grader.attempts}
          - Correct: ${grader.correctAttempts}
          - Passed: ${grader.correctAttempts > 0}
