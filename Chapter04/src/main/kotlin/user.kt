@@ -1,7 +1,6 @@
-import sun.security.util.Password
 import java.security.MessageDigest
 
-class User(var userName: String, password: String) {
+class User(private var username: String, password: String) : Throwable() {
 
     var isLoggedIn = false
     var encryptedPassword = encryptPassword(password)
@@ -9,7 +8,7 @@ class User(var userName: String, password: String) {
 
     private fun encryptPassword(password: String): String {
         // https://gist.github.com/lovubuntu/164b6b9021f5ba54cefc67f60f7a1a25
-        val userPlusPassword = userName+password
+        val userPlusPassword = username+password
 
         val bytes = userPlusPassword.toByteArray()
         val digest = MessageDigest
