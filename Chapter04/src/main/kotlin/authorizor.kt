@@ -4,8 +4,7 @@ class Authorizor(private val authenticator: Authenticator) {
 
     fun addPermission(permName: String) {
         try {
-            val permSet = permissions[permName]!!
-            println(permSet)
+            permissions[permName]!!
             throw PermissionError("Permission Exists")
         }
         catch (e: NullPointerException) {
