@@ -7,5 +7,6 @@ fun main() {
    authorizor.addPermission("change program")
    authorizor.permitUser("test program", "joe")
    authorizor.checkPermission("test program", "joe")
-   authorizor.checkPermission("change program", "joe")
+
+   Editor(authenticator, authorizor).menu()
 }

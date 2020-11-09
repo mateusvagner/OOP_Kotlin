@@ -18,7 +18,7 @@ class Authenticator {
         users[username] = User(username, password)
     }
 
-    fun login(username: String, password: String) {
+    fun login(username: String, password: String): Boolean {
         val user = try {
             users[username]!!
         }
@@ -31,6 +31,7 @@ class Authenticator {
         }
 
         user.isLoggedIn = true
+        return true
     }
 
     fun isLoggedIn(username: String): Boolean {
