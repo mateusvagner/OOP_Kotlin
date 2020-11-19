@@ -1,4 +1,4 @@
-open class AuthException(username: String, user: User? = null) : Exception(username, user)
+open class AuthException(username: String?, user: User? = null) : Exception(username, user)
 
 class UserNameAlreadyExists(username: String) : AuthException(username)
 
@@ -10,6 +10,6 @@ class InvalidPassword(username: String, user: User? = null) : AuthException(user
 
 class PermissionError(message: String) : Exception(message)
 
-class NotLoggedInError(username: String) : AuthException(username)
+class NotLoggedInError(username: String?) : AuthException(username)
 
 class NotPermittedError(username: String) : AuthException(username)

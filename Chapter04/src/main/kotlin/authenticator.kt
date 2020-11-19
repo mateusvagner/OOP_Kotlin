@@ -1,3 +1,4 @@
+import java.lang.NullPointerException
 import javax.management.openmbean.KeyAlreadyExistsException
 
 class Authenticator {
@@ -22,7 +23,7 @@ class Authenticator {
         val user = try {
             users[username]!!
         }
-        catch (e: IllegalArgumentException) {
+        catch (e: NullPointerException) {
             throw InvalidUsername(username)
         }
 
@@ -34,7 +35,7 @@ class Authenticator {
         return true
     }
 
-    fun isLoggedIn(username: String): Boolean {
+    fun isLoggedIn(username: String?): Boolean {
         if(username in users.keys) {
             return users[username]!!.isLoggedIn
         }

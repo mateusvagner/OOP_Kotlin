@@ -18,22 +18,22 @@ class Authorizor(private val authenticator: Authenticator) {
             if(username !in authenticator.users.keys) {
                 throw InvalidUsername(username)
             }
-            permSet.add(username) //mesmo objeto de permissions[permName]?
+            permSet.add(username)
         }
         catch (e: NullPointerException) {
             throw PermissionError("Permission Does Not Exist.")
         }
     }
 
-    fun checkPermission(permName: String, username: String): Boolean {
-        if(authenticator.isLoggedIn(username)) {
+    fun checkPermission(permName: String, username: String?): Boolean {
+        if(!(authenticator.isLoggedIn(username))) {
             throw NotLoggedInError(username)
         }
 
         try {
             val permSet = permissions[permName]!!
             if (username !in permSet) {
-                throw NotPermittedError(username)
+                throw NotPermittedError(username!!)
             } else {
                 println("User have Permission")
                 return true

@@ -3,14 +3,8 @@ import kotlin.system.exitProcess
 
 class Editor(private val authenticator: Authenticator, private val authorizor: Authorizor) {
     var username: String? = null
-    var menuMap: HashMap<String, String?> = hashMapOf(
-            "login" to "login",
-            "test" to "test",
-            "change" to "change",
-            "quit" to "quit")
 
-
-    fun login(){
+    private fun login() {
         var loggedIn = false
         while (!loggedIn) {
             println("username: ")
@@ -20,6 +14,7 @@ class Editor(private val authenticator: Authenticator, private val authorizor: A
 
             try {
                 loggedIn = this.authenticator.login(username, password)
+                println("loggedIn: $loggedIn")
                 this.username = username
             }
             catch (e: InvalidUsername) {
@@ -31,9 +26,9 @@ class Editor(private val authenticator: Authenticator, private val authorizor: A
         }
     }
 
-    fun isPermitted(permission: String): Boolean {
+    private fun isPermitted(permission: String): Boolean {
         return try {
-            authorizor.checkPermission(permission, username!!)
+            authorizor.checkPermission(permission, username)
             true
         }
         catch (e: NotLoggedInError) {
@@ -46,43 +41,43 @@ class Editor(private val authenticator: Authenticator, private val authorizor: A
         }
     }
 
-    fun test() {
+    private fun test() {
         if(isPermitted("test program")) {
             println("Testing program now")
         }
     }
 
-    fun change() {
+    private fun change() {
         if(isPermitted("change program")) {
             println("Changing program now")
         }
     }
 
-    fun quit() {
+    private fun quit() {
         exitProcess(1 )
     }
 
     fun menu() {
-        var answer: String = ""
+        var answer: String
         try {
             while (true) {
                 println("""
-                    
     Please enter a command:
         type:
             login for Login
             test for Test
             change for Change
             quit for Quit
-            
                         """)
-            answer = readLine()!!
+                println("enter a command: ")
+                answer = readLine()!!
                 try {
-                    when(menuMap[answer]!!) {
+                    when(answer) {
                         "login" -> this.login()
                         "test" -> this.test()
                         "change" -> this.change()
                         "quit"  -> this.quit()
+                        else ->  println("$answer is not a valid option")
                     }
                 }
                 catch (e: NullPointerException) {
@@ -90,7 +85,7 @@ class Editor(private val authenticator: Authenticator, private val authorizor: A
                 }
             }
         }
-        finally {
+        finally { // TODO -> Não é executado
             println("Thank you for testing the auth module")
         }
     }
