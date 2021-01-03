@@ -2,17 +2,18 @@ import java.io.File
 
 class Document(
     var characters: MutableList<String> = mutableListOf(),
-    var cursor: Int = 0,
     val fileName: String
 ) {
 
+    var cursor: Cursor = Cursor(this)
+
     fun insert(character: String) {
-        characters.add(cursor, character)
-        cursor += 1
+        characters.add(cursor.position, character)
+        cursor.forward()
     }
 
     fun delete() {
-        characters.removeAt(cursor)
+        characters.removeAt(cursor.position)
     }
 
     fun save() {
@@ -22,11 +23,11 @@ class Document(
     }
 
     fun forward() {
-        cursor += 11
+        cursor.forward()
     }
 
     fun back() {
-        cursor -= 1
+        cursor.back()
     }
 
 }

@@ -7,12 +7,16 @@ fun main() {
     doc.insert("l")
     doc.insert("l")
     doc.insert("o")
+    doc.insert("\n")
+    doc.insert("w")
+    doc.insert("o")
+    doc.insert("r")
+    doc.insert("l")
+    doc.insert("d")
 
-    println(doc.characters.joinToString(""))
+    doc.cursor.home()
 
-    doc.back()
-    doc.delete()
-    doc.insert("p")
+    doc.insert("*")
 
     println(doc.characters.joinToString(""))
 
