@@ -1,15 +1,27 @@
 import java.io.File
 
 class Document(
-    var characters: MutableList<String> = mutableListOf(),
+    var characters: MutableList<Character> = mutableListOf(),
     val fileName: String
 ) {
 
     var cursor: Cursor = Cursor(this)
 
-    fun insert(character: String) {
-        characters.add(cursor.position, character)
-        cursor.forward()
+    fun insert(character: Any) {
+        when (character) {
+            is Character -> {
+                characters.add(cursor.position, character)
+                cursor.forward()
+            }
+            is String -> {
+                val characterObj = Character(character)
+                characters.add(cursor.position, characterObj)
+                cursor.forward()
+            }
+            else -> {
+                throw TypeCastException()
+            }
+        }
     }
 
     fun delete() {
@@ -28,6 +40,11 @@ class Document(
 
     fun back() {
         cursor.back()
+    }
+
+    fun string(): String {
+        val text = this.characters.map { it.characterStr }
+        return text.joinToString("")
     }
 
 }

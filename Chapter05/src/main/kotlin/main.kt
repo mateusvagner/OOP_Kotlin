@@ -4,20 +4,26 @@ fun main() {
 
     doc.insert("h")
     doc.insert("e")
-    doc.insert("l")
-    doc.insert("l")
+    doc.insert(Character("l", bold = true))
+    doc.insert(Character("l", bold = true))
     doc.insert("o")
     doc.insert("\n")
-    doc.insert("w")
-    doc.insert("o")
-    doc.insert("r")
+    doc.insert(Character("w", italic = true))
+    doc.insert(Character("o", italic = true))
+    doc.insert(Character("r", underline = true))
     doc.insert("l")
     doc.insert("d")
 
+    println(doc.string())
+
     doc.cursor.home()
+    doc.delete()
+    doc.insert("W")
 
-    doc.insert("*")
+    println(doc.string())
 
-    println(doc.characters.joinToString(""))
+    doc.characters[0].underline = true
+
+    println(doc.string())
 
 }
