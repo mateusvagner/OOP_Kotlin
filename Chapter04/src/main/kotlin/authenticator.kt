@@ -2,9 +2,6 @@ import java.lang.NullPointerException
 import javax.management.openmbean.KeyAlreadyExistsException
 
 class Authenticator {
-
-//    catch (e: KeyAlreadyExistsException)
-
     var users: HashMap<String, User> = hashMapOf()
 
     fun addUser(username: String, password: String) {

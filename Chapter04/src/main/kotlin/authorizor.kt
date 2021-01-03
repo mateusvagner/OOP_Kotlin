@@ -10,6 +10,8 @@ class Authorizor(private val authenticator: Authenticator) {
         catch (e: NullPointerException) {
             permissions[permName] = mutableSetOf()
         }
+
+//        permissions.getOrDefault(permName, mutableSetOf())
     }
 
     fun permitUser(permName: String, username: String) {
@@ -18,7 +20,7 @@ class Authorizor(private val authenticator: Authenticator) {
             if(username !in authenticator.users.keys) {
                 throw InvalidUsername(username)
             }
-            permSet.add(username)
+            permSet.add(username) // TODO -> vai pro set do permissions[permName] por ser o mesmo objeto?
         }
         catch (e: NullPointerException) {
             throw PermissionError("Permission Does Not Exist.")
