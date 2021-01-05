@@ -1,6 +1,6 @@
 fun main() {
 
-    val doc = Document(fileName = "test_document")
+    val doc = Document("test_document")
 
     doc.insert("h")
     doc.insert("e")

@@ -12,6 +12,8 @@ class Cursor(
     }
 
     fun home() {
+        if (document.characters.isEmpty()) return
+
         while (document.characters[position-1].character != "\n") {
             if (position == 0) break // Got to beginning of file
             position -= 1

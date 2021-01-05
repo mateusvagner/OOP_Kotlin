@@ -1,10 +1,10 @@
 import java.io.File
 
 class Document(
-    var characters: MutableList<Character> = mutableListOf(),
-    val fileName: String
+        private val fileName: String
 ) {
 
+    var characters: MutableList<Character> = mutableListOf()
     var cursor: Cursor = Cursor(this)
 
     fun insert(character: Any) {
@@ -43,7 +43,7 @@ class Document(
     }
 
     fun string(): String {
-        val text = this.characters.map { it.characterStr }
+        val text = this.characters.map { it.toString() }
         return text.joinToString("")
     }
 

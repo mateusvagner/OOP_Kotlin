@@ -5,10 +5,7 @@ class Character(
     var underline: Boolean = false
 ) {
 
-    val characterStr: String
-        get() = getString()
-
-    private fun getString(): String {
+    override fun toString(): String {
         val boldCharacter: String = if (bold) {
             "*"
         } else {
@@ -28,4 +25,5 @@ class Character(
         }
         return boldCharacter + italicCharacter + underlineCharacter + character
     }
+
 }
